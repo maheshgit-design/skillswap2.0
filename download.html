@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download SkillSwap Source Code</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to right, #4F46E5, #8B5CF6);
+            color: white;
+        }
+        .container {
+            max-width: 800px;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            margin: 0 0 20px 0;
+            font-size: 2.5rem;
+            background: linear-gradient(to right, #fff, #ccc);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        p {
+            margin-bottom: 30px;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+        .download-btn {
+            display: inline-block;
+            background: linear-gradient(to right, #22c55e, #10b981);
+            color: white;
+            font-weight: bold;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .download-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(to right, #16a34a, #059669);
+        }
+        .steps {
+            background-color: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .steps ol {
+            margin-left: 20px;
+            padding-left: 20px;
+        }
+        .steps li {
+            margin-bottom: 10px;
+        }
+        code {
+            background-color: rgba(0, 0, 0, 0.2);
+            padding: 3px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>SkillSwap Source Code</h1>
+        <p>
+            This is the source code for the SkillSwap platform, a skill exchange application where users can share skills they can teach and find others with skills they want to learn. It features skill testing and rating functionality to ensure quality exchanges.
+        </p>
+        
+        <a href="/tmp/skillswap-source.zip" download class="download-btn">Download Source Code (ZIP)</a>
+        
+        <div class="steps">
+            <h2>How to use this code:</h2>
+            <ol>
+                <li>Download the ZIP file using the button above</li>
+                <li>Extract the ZIP file to your local machine</li>
+                <li>Upload it to your GitHub repository</li>
+                <li>Install dependencies with <code>npm install</code></li>
+                <li>Create a PostgreSQL database and update the connection string in your environment variables</li>
+                <li>Run the database migrations with <code>npm run db:push</code></li>
+                <li>Start the development server with <code>npm run dev</code></li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
